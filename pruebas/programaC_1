@@ -1,0 +1,15 @@
+decs
+	proc imprimir_tres()
+		decs
+			x
+		end decs
+
+		body
+			set x to 3,
+			out x
+		end body
+end decs
+
+body
+	call imprimir_tres end call
+end body

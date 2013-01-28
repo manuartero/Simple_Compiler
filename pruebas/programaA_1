@@ -1,0 +1,8 @@
+decs 
+	entero
+end decs
+
+body
+	set entero to 103,
+	out entero
+end body

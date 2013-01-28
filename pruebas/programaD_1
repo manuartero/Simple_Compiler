@@ -1,0 +1,25 @@
+decs 
+	x,
+	proc funcion_uno(a)
+		decs
+			proc funcion_dos(a)
+				decs
+					proc funcion_tres(a)
+					body
+						out a
+					end body
+				end decs
+				body
+					call funcion_tres with a end call
+				end body
+		end decs
+
+		body
+			call funcion_dos with a end call
+		end body
+end decs
+
+body
+	set x to 9,
+	call funcion_uno with x end call
+end body

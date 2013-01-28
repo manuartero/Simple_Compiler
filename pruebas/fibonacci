@@ -1,0 +1,27 @@
+decs
+	x,
+	resultado,
+	proc fibonacci(num, var r)
+	decs
+		aux1, aux2
+	end decs
+	body
+		if (num < 2) then
+		{
+			set r to 1
+		} 
+		else
+		{
+			call fibonacci with num-1, aux1 end call,
+			call fibonacci with num-2, aux2 end call,
+			
+			set r to aux1+aux2
+		}
+	end body
+end decs
+
+body
+	set x to 6,
+	call fibonacci with x,resultado end call,
+	out resultado
+end body

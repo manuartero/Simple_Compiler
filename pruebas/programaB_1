@@ -1,0 +1,29 @@
+decs
+	or_ejecutado, and_ejecutada,
+	or_no_ejecutado, and_no_ejecutada
+end decs
+
+body 
+	set or_ejecutado to 1,
+	set or_no_ejecutado to 2,
+	set and_ejecutada to 3,
+	set and_no_ejecutada to 4,
+	
+	if(1 or 0) then
+	{
+		out or_ejecutado
+	}
+	else
+	{
+		out or_no_ejecutado
+	},
+	
+	if(1 and 0) then
+	{
+		out and_ejecutada
+	}
+	else
+	{
+		out and_no_ejecutada
+	}
+end body

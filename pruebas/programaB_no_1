@@ -1,0 +1,14 @@
+decs
+	x,y
+end decs
+
+body
+	set x to 1,
+	set y to 2,
+	
+	if(x = y) then
+	else
+	{
+		out x
+	}
+end body

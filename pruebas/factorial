@@ -1,0 +1,32 @@
+decs
+	proc factorial(x, acumulado)
+	decs 
+		uno
+	end decs
+	body
+		set uno to 1,
+		if (x=0) then
+		{
+			out uno
+		}
+		else
+		{ 
+			if(x = 1) then 
+			{
+				out acumulado
+			}
+			else
+			{
+				set acumulado to x * acumulado,
+				call factorial with x-1, acumulado end call
+			}
+		}
+	end body,
+	x, uno
+end decs
+
+body
+	set uno to 1,
+	set x to 30,
+	call factorial with x, uno end call
+end body

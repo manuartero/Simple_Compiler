@@ -1,0 +1,30 @@
+decs
+	x,y,z,
+	proc f(a,b,c)
+	decs
+		x
+	end decs
+	body
+		set x to a * b * c,
+		out x
+	end body,
+	proc g(a, var b)
+	decs
+		x
+	end decs
+	body
+		set b to b * a,
+		set b to x / b
+	end body
+end decs
+body
+	set x to 1,
+	set y to 2,
+	set z to x - y,
+	call g with 1, x end call,
+	if( x < 0 ) then
+	{	
+		out x,
+		call f with x,y,z end call
+	} 
+end body

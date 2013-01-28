@@ -1,0 +1,4 @@
+body
+	set x to c,
+	out x
+end body

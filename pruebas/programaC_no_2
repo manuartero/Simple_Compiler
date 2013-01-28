@@ -1,0 +1,12 @@
+decs
+	x,
+	proc f(x, var y)
+	body
+		set y to x,
+		out y
+	end  body
+end decs
+
+body
+	call f with x,3 end call
+end body

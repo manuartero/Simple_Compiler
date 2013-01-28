@@ -1,0 +1,11 @@
+decs
+	x, y,
+	proc f(a)
+	body
+		out a
+	end body
+end decs
+
+body
+	call f with x,y end call
+end body

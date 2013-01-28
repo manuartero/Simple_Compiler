@@ -1,0 +1,14 @@
+decs 
+	x,
+	proc aumentar_variable(var x)
+		body
+			set x to x+1
+		end body
+end decs
+
+body
+	set x to 1,
+	out x,
+	call aumentar_variable with x end call,
+	out x
+end body

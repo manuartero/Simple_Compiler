@@ -1,0 +1,18 @@
+decs
+	proc g(a)
+		body
+			out a
+		end body
+	,
+	proc f()
+		decs
+			x
+		end decs
+		body
+			set x to 3
+		end body
+end decs
+
+body
+	call g with f end call
+end body

@@ -1,0 +1,26 @@
+decs 
+ x
+end decs
+
+body 
+	set x to 7,
+	if (x = 6) then 
+	{
+		set x to x + 1,
+		out x 
+	}
+	else
+	{
+		set x to 8 + 2,
+		out x,
+		if (x > 9) then 
+		{
+			if (x < 100) then
+			{
+				set x to x + x,
+				out x
+			} 
+		}
+	}
+	
+end body

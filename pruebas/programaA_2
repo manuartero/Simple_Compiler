@@ -1,0 +1,13 @@
+decs
+	x,y,z
+end decs
+
+body
+	set x to 3,
+	set y to x + 1,
+	set z to x * y,
+
+	out x,
+	out y,
+	out z
+end body

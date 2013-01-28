@@ -1,0 +1,7 @@
+decs
+	x
+end decs
+
+body
+	set x to +
+end body

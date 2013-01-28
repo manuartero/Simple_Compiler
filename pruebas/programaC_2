@@ -1,0 +1,13 @@
+decs
+	x,
+	proc imprimir_variable(entero)
+		body
+			out entero
+		end body
+end decs
+
+body
+	set x to 5,
+	call imprimir_variable with x end call,
+	call imprimir_variable with 5 end call
+end body
